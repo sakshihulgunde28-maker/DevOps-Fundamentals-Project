@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps Learning & Troubleshooting Hub</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -78,16 +79,46 @@
         </section>
 
         <!-- Troubleshooting Center -->
-        <section>
-            <h2>Troubleshooting Center</h2>
-            <ul>
-                <li>SSH Connection Issues</li>
-                <li>EC2 Instance Access Problems</li>
-                <li>Apache2 Service Errors</li>
-                <li>Git Push & Pull Failures</li>
-                <li>Jenkins Build Failures</li>
-                <li>Port 80 Access Issues</li>
-            </ul>
+        <!-- Troubleshooting Center -->
+        <section class="card troubleshooting">
+
+            <h2>🛠 Troubleshooting Center</h2>
+
+            <h3>AWS EC2 Issues</h3>
+            <p>
+                <strong>Problem:</strong> SSH connection failed<br>
+                <strong>Solution:</strong> Check Security Group rules,
+                key permissions, and instance status.
+            </p>
+
+            <h3>Linux Issues</h3>
+            <p>
+                <strong>Problem:</strong> Permission denied error<br>
+                <strong>Solution:</strong> Check file ownership and use
+                chmod/chown commands.
+            </p>
+
+            <h3>Apache2 Issues</h3>
+            <p>
+                <strong>Problem:</strong> Website not loading<br>
+                <strong>Solution:</strong> Check Apache service status
+                and port 80 configuration.
+            </p>
+
+            <h3>Git & GitHub Issues</h3>
+            <p>
+                <strong>Problem:</strong> Git push or pull failure<br>
+                <strong>Solution:</strong> Verify repository URL, branch
+                name, and authentication.
+            </p>
+
+            <h3>Jenkins Issues</h3>
+            <p>
+                <strong>Problem:</strong> Pipeline build failed<br>
+                <strong>Solution:</strong> Check Jenkins logs, Jenkinsfile
+                syntax, and agent configuration.
+            </p>
+
         </section>
 
         <!-- Automation -->
