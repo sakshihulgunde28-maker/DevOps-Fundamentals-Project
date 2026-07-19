@@ -4,213 +4,644 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DevOps Learning & Troubleshooting Hub</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
+
 <body>
 
-    <header>
-        <h1>DevOps Learning & Troubleshooting Hub</h1>
-        <p>Cloud-Based Linux Server Deployment with GitHub Version Control & Automation</p>
-    </header>
 
-    <main>
-
-        <!-- Project Information -->
-        <section>
-            <h2>Project Information</h2>
-            <p><strong>Project Title:</strong> Cloud-Based Linux Server Deployment with GitHub Version Control and
-                Automation</p>
-            <p><strong>Student Name:</strong> Sakshi Hulgunde</p>
-            <p><strong>Institute:</strong> ITVedant</p>
-            <p><strong>Batch Code:</strong> DRA-501</p>
-            <p><strong>Technology:</strong> AWS EC2, Ubuntu Linux, Apache2, Git, GitHub, Bash Scripting</p>
-        </section>
-
-        <!-- Student Profile -->
-        <section>
-            <h2>Student Profile</h2>
-            <p>Name: Sakshi Hulgunde</p>
-            <p>Course: DevOps with AWS</p>
-            <p>Institute: ITVedant</p>
-            <p>Learning Goal: Become a DevOps Engineer & Cloud Professional</p>
-        </section>
-
-        <!-- Learning Progress -->
-        <section>
-            <h2>Learning Progress</h2>
-            <ul>
-                <li>Linux Administration ✅ Completed</li>
-                <li>Git & GitHub ✅ Completed</li>
-                <li>AWS EC2 Deployment ✅ Completed</li>
-                <li>Apache2 Web Hosting ✅ Completed</li>
-                <li>Jenkins 🔄 In Progress</li>
-                <li>Docker ⏳ Upcoming</li>
-            </ul>
-        </section>
-
-        <!-- Project Status -->
-        <section>
-            <h2>Project Status</h2>
-            <ul>
-                <li>AWS EC2 Instance Running ✅</li>
-                <li>Ubuntu Linux Configured ✅</li>
-                <li>Apache2 Installed ✅</li>
-                <li>Website Hosted on EC2 ✅</li>
-                <li>GitHub Repository Connected ✅</li>
-                <li>SSH Access Verified ✅</li>
-                <li>Security Group Configured ✅</li>
-            </ul>
-        </section>
-
-        <!-- Monitoring Dashboard -->
-        <!-- Monitoring Dashboard -->
-        <section class="monitoring-dashboard">
-
-            <h2>📊 Monitoring Dashboard</h2>
-
-            <div class="monitor-grid">
-
-                <div class="monitor-card">
-                    <h3>CPU Usage</h3>
-                    <p class="value">0%</p>
-                    <p class="status">🟢 Healthy</p>
-                </div>
+    <div class="dashboard">
 
 
-                <div class="monitor-card">
-                    <h3>Memory Usage</h3>
-                    <p class="value">597 MiB / 7.6 GiB</p>
-                    <p class="status">🟢 Normal</p>
-                </div>
+        <!-- SIDEBAR -->
 
+        <aside class="sidebar">
 
-                <div class="monitor-card">
-                    <h3>Disk Usage</h3>
-                    <p class="value">40%</p>
-                    <p class="status">🟢 Healthy</p>
-                </div>
-
-
-                <div class="monitor-card">
-                    <h3>Server Uptime</h3>
-                    <p class="value">3 Hours</p>
-                    <p class="status">🟢 Running</p>
-                </div>
-
-
-                <div class="monitor-card">
-                    <h3>Active Users</h3>
-                    <p class="value">2 Users</p>
-                    <p class="status">🟢 Normal</p>
-                </div>
-
-
-                <div class="monitor-card">
-                    <h3>Process Status</h3>
-                    <p class="value">Stable</p>
-                    <p class="status">🟢 No High Load</p>
-                </div>
-
+            <div class="logo">
+                <i class="fa-solid fa-cloud"></i>
+                <h2>DevOps Hub</h2>
             </div>
 
-        </section>
 
-        <!-- Troubleshooting Center -->
-        <!-- Troubleshooting Center -->
-        <section class="card troubleshooting">
-
-            <h2>🛠 Troubleshooting Center</h2>
-
-            <h3>AWS EC2 Issues</h3>
-            <p>
-                <strong>Problem:</strong> SSH connection failed<br>
-                <strong>Solution:</strong> Check Security Group rules,
-                key permissions, and instance status.
-            </p>
-
-            <h3>Linux Issues</h3>
-            <p>
-                <strong>Problem:</strong> Permission denied error<br>
-                <strong>Solution:</strong> Check file ownership and use
-                chmod/chown commands.
-            </p>
-
-            <h3>Apache2 Issues</h3>
-            <p>
-                <strong>Problem:</strong> Website not loading<br>
-                <strong>Solution:</strong> Check Apache service status
-                and port 80 configuration.
-            </p>
-
-            <h3>Git & GitHub Issues</h3>
-            <p>
-                <strong>Problem:</strong> Git push or pull failure<br>
-                <strong>Solution:</strong> Verify repository URL, branch
-                name, and authentication.
-            </p>
-
-            <h3>Jenkins Issues</h3>
-            <p>
-                <strong>Problem:</strong> Pipeline build failed<br>
-                <strong>Solution:</strong> Check Jenkins logs, Jenkinsfile
-                syntax, and agent configuration.
-            </p>
-
-        </section>
-
-        <!-- Automation -->
-        <section>
-            <h2>Automation</h2>
             <ul>
-                <li>Bash Scripting Automation</li>
-                <li>System Health Checks</li>
-                <li>Disk Usage Monitoring Scripts</li>
-                <li>Apache Service Verification</li>
-                <li>Routine Administrative Tasks</li>
+
+                <li class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </li>
+
+
+                <li>
+                    <i class="fa-brands fa-aws"></i>
+                    AWS Cloud
+                </li>
+
+
+                <li>
+                    <i class="fa-brands fa-linux"></i>
+                    Linux
+                </li>
+
+
+                <li>
+                    <i class="fa-brands fa-git-alt"></i>
+                    Git & GitHub
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-gears"></i>
+                    Jenkins CI/CD
+                </li>
+
+
+                <li>
+                    <i class="fa-brands fa-docker"></i>
+                    Docker
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    Troubleshooting
+                </li>
+
+
+                <li>
+                    <i class="fa-solid fa-road"></i>
+                    Roadmap
+                </li>
+
             </ul>
-        </section>
 
-        <!-- Architecture Diagram -->
-        <section>
-            <h2>Architecture Diagram</h2>
-            <pre>
-User Browser
-      |
-      ▼
-AWS EC2 Instance
-(Ubuntu Linux)
-      |
-      ▼
-Apache2 Web Server
-      |
-      ▼
-DevOps Learning Hub
-            </pre>
-        </section>
 
-        <!-- Repository Information -->
-        <section>
-            <h2>Repository Information</h2>
-            <p><strong>Repository:</strong> DevOps-Fundamentals-Project</p>
-            <p><strong>Version Control:</strong> Git & GitHub</p>
-            <p><strong>Branch:</strong> main</p>
-            <p><strong>Deployment:</strong> AWS EC2 Ubuntu Server</p>
-        </section>
+        </aside>
 
-        <!-- Future Roadmap -->
-        <section>
-            <h2>Future Roadmap</h2>
-            <p>Jenkins → Docker → Kubernetes → Terraform → Ansible</p>
-        </section>
 
-    </main>
 
-    <footer>
-        <p>© 2026 Sakshi Hulgunde | DevOps Learning & Troubleshooting Hub</p>
-    </footer>
+
+        <!-- MAIN CONTENT -->
+
+
+        <main class="main">
+
+
+
+            <!-- HERO -->
+
+
+            <section class="hero">
+
+
+                <div>
+
+                    <h1>
+                        Cloud-Based Linux Server Deployment
+                    </h1>
+
+
+                    <p>
+                        DevOps Learning & Troubleshooting Hub
+                    </p>
+
+
+                    <button>
+                        View Project
+                    </button>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+
+            <!-- PROFILE -->
+
+
+            <section class="grid">
+
+
+                <div class="card profile">
+
+
+                    <h2>
+                        Student Profile
+                    </h2>
+
+
+                    <p>
+                        <b>Name:</b> Sakshi Hulgunde
+                    </p>
+
+
+                    <p>
+                        <b>Institute:</b> Vedant
+                    </p>
+
+
+                    <p>
+                        <b>Batch:</b> DRA-501
+                    </p>
+
+
+                    <p>
+                        <b>Project:</b> DevOps Fundamentals
+                    </p>
+
+
+                </div>
+
+
+
+
+
+                <div class="card status">
+
+
+                    <h2>
+                        Project Status
+                    </h2>
+
+
+                    <p>🟢 AWS EC2 Deployment Completed</p>
+
+                    <p>🟢 Ubuntu Server Configured</p>
+
+                    <p>🟢 Apache Web Server Running</p>
+
+                    <p>🟢 GitHub Repository Connected</p>
+
+                    <p>🟢 Jenkins Pipeline Implemented</p>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+            <!-- MONITORING -->
+
+
+            <section>
+
+
+                <h2 class="section-title">
+                    Server Monitoring
+                </h2>
+
+
+
+                <div class="monitor-grid">
+
+
+                    <div class="monitor-card">
+
+                        <i class="fa-solid fa-microchip"></i>
+
+                        <h3>CPU Usage</h3>
+
+                        <p>42%</p>
+
+                    </div>
+
+
+
+                    <div class="monitor-card">
+
+                        <i class="fa-solid fa-memory"></i>
+
+                        <h3>Memory Usage</h3>
+
+                        <p>58%</p>
+
+                    </div>
+
+
+
+
+                    <div class="monitor-card">
+
+                        <i class="fa-solid fa-hard-drive"></i>
+
+                        <h3>Disk Usage</h3>
+
+                        <p>35%</p>
+
+                    </div>
+
+
+
+
+
+                    <div class="monitor-card">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                        <h3>Server Uptime</h3>
+
+                        <p>2 Days</p>
+
+                    </div>
+
+
+
+
+
+                    <div class="monitor-card">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <h3>Logged Users</h3>
+
+                        <p>ubuntu</p>
+
+                    </div>
+
+
+
+
+
+                    <div class="monitor-card">
+
+                        <i class="fa-solid fa-list"></i>
+
+                        <h3>Running Processes</h3>
+
+                        <p>10 Active</p>
+
+                    </div>
+
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+
+
+            <!-- ARCHITECTURE -->
+
+
+            <section class="architecture">
+
+
+                <h2 class="section-title">
+                    DevOps Architecture
+                </h2>
+
+
+
+                <div class="flow">
+
+
+                    <div>
+                        User
+                    </div>
+
+
+                    <span>↓</span>
+
+
+                    <div>
+                        AWS EC2
+                    </div>
+
+
+                    <span>↓</span>
+
+
+                    <div>
+                        Ubuntu Linux
+                    </div>
+
+
+                    <span>↓</span>
+
+
+                    <div>
+                        Apache Server
+                    </div>
+
+
+                    <span>↓</span>
+
+
+                    <div>
+                        GitHub Repository
+                    </div>
+
+
+                    <span>↓</span>
+
+
+                    <div>
+                        Jenkins CI/CD
+                    </div>
+
+
+                    <span>↓</span>
+
+
+                    <div>
+                        Automated Deployment
+                    </div>
+
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+
+
+            <!-- TECHNOLOGY -->
+
+
+            <section>
+
+
+                <h2 class="section-title">
+                    Technology Stack
+                </h2>
+
+
+                <div class="tech-grid">
+
+
+                    <div>
+                        🐧 Linux
+                    </div>
+
+
+                    <div>
+                        ☁ AWS
+                    </div>
+
+
+                    <div>
+                        🔧 Git
+                    </div>
+
+
+                    <div>
+                        ⚙ Jenkins
+                    </div>
+
+
+                    <div>
+                        🐳 Docker
+                    </div>
+
+
+                    <div>
+                        ☸ Kubernetes
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+
+
+
+
+
+            <!-- TROUBLESHOOTING -->
+
+
+            <section>
+
+
+                <h2 class="section-title">
+                    Troubleshooting Center
+                </h2>
+
+
+
+                <table>
+
+
+                    <tr>
+
+                        <th>
+                            Issue
+                        </th>
+
+                        <th>
+                            Cause
+                        </th>
+
+                        <th>
+                            Resolution
+                        </th>
+
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            Apache Service Failed
+                        </td>
+
+                        <td>
+                            Service stopped
+                        </td>
+
+                        <td>
+                            Restart apache2 service
+                        </td>
+
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            SSH Connection Error
+                        </td>
+
+                        <td>
+                            Security Group Issue
+                        </td>
+
+                        <td>
+                            Allow Port 22
+                        </td>
+
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            Jenkins Build Failed
+                        </td>
+
+                        <td>
+                            Pipeline Error
+                        </td>
+
+                        <td>
+                            Check Jenkinsfile
+                        </td>
+
+
+                    </tr>
+
+
+
+                    <tr>
+
+                        <td>
+                            Permission Denied
+                        </td>
+
+                        <td>
+                            Wrong Ownership
+                        </td>
+
+                        <td>
+                            Use chmod/chown
+                        </td>
+
+
+                    </tr>
+
+
+
+                </table>
+
+
+            </section>
+
+
+
+
+
+
+
+
+
+
+            <!-- ROADMAP -->
+
+
+            <section>
+
+
+                <h2 class="section-title">
+                    Future Roadmap
+                </h2>
+
+
+                <div class="roadmap">
+
+
+                    <div>
+                        Linux
+                        <br>
+                        ✔ Completed
+                    </div>
+
+
+                    <div>
+                        Git
+                        <br>
+                        ✔ Completed
+                    </div>
+
+
+                    <div>
+                        AWS
+                        <br>
+                        ✔ Completed
+                    </div>
+
+
+                    <div>
+                        Jenkins
+                        <br>
+                        ✔ Completed
+                    </div>
+
+
+                    <div>
+                        Docker
+                        <br>
+                        Next
+                    </div>
+
+
+                    <div>
+                        Kubernetes
+                        <br>
+                        Future
+                    </div>
+
+
+                    <div>
+                        Terraform
+                        <br>
+                        Future
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+
+
+        </main>
+
+
+
+    </div>
+
+
 
 </body>
 
