@@ -1,277 +1,390 @@
-# 🚀 Cloud-Based Linux Server Deployment with GitHub Version Control and Automation
+# Cloud-Based Linux Server Deployment with GitHub Version Control and Automation
 
-## 📌 Project Overview
+## Project Overview
 
-This project demonstrates a complete DevOps workflow by deploying a cloud-based Linux web server using AWS EC2, configuring an Ubuntu server, deploying a web application using Apache, implementing GitHub version control, automating administrative tasks using Bash scripting, and performing system monitoring and troubleshooting.
+This project demonstrates the deployment of a static website on an AWS cloud-based Linux server using DevOps practices.
 
-The project was developed as part of the **ITVedant DevOps Fundamentals Mini Project**.
-
----
-
-## 🎯 Project Objective
-
-The objective of this project is to gain practical hands-on experience with:
+The main objective of this project is to gain practical knowledge of:
 
 - AWS Cloud Infrastructure
 - Linux Server Administration
-- Apache Web Server Deployment
 - Git & GitHub Version Control
+- Web Server Deployment
 - Bash Automation
-- Process Management
-- Log Monitoring
+- Server Monitoring
 - Troubleshooting
 
+The website is hosted on an AWS EC2 Ubuntu instance using Apache Web Server.
+
 ---
 
-# 🏗️ Architecture Overview
+# AWS Architecture
 
-The project follows this deployment architecture:
-User Browser
-|
-|
-AWS EC2 Public IP
-|
-|
-Ubuntu Linux Server
-|
-|
+The project architecture follows this workflow:
+
+Developer
+
+↓
+
+Visual Studio Code
+
+↓
+
+Git Repository
+
+↓
+
+GitHub Repository
+
+↓
+
+AWS EC2 Ubuntu Server
+
+↓
+
 Apache Web Server
-|
-|
-HTML/CSS/JavaScript Website
+
+↓
+
+Live Website
 
 
----
+## AWS Services Used
 
-# 🛠️ Technologies Used
-
-| Technology | Purpose |
+| Service | Purpose |
 |---|---|
-| AWS EC2 | Cloud Server Hosting |
-| Ubuntu Linux | Server Operating System |
-| Apache2 | Web Server |
-| Git | Version Control |
-| GitHub | Source Code Management |
-| Bash Script | Automation |
-| HTML5 | Web Interface |
-| CSS3 | Styling |
-| JavaScript | Website Interaction |
-
----
-
-# ☁️ AWS Infrastructure
-
-The following AWS resources were configured:
-
-- Custom VPC
-- Public Subnet
-- Internet Gateway
-- Route Table
-- Security Group
-- Ubuntu EC2 Instance
-
-EC2 Security Group Configuration:
-
-| Port | Service |
-|---|---|
-| 22 | SSH |
-| 80 | HTTP |
-
----
-
-# 🌐 Live Website
-
-The website is deployed on AWS EC2 Ubuntu Server.
-
-Live URL:
+| Amazon EC2 | Hosting Linux server |
+| Security Group | Firewall configuration |
+| Ubuntu | Operating system |
+| Apache2 | Web server |
+| GitHub | Source code management |
 
 
 ---
 
-# 📂 Project Structure
+# Installation Steps
 
-DevOps-Fundamentals-Project/
+## Step 1: Launch AWS EC2 Instance
 
-│── index.html
-│── README.md
-
-├── css/
-│ └── style.css
-
-├── js/
-│ └── script.js
-
-├── images/
-
-├── scripts/
-│
-│ ├── server_health_check.sh
-│ ├── apache_monitor.sh
-│ └── website_backup.sh
-
-├── documentation/
-
-└── screenshots/
+1. Login to AWS Console
+2. Open EC2 service
+3. Launch Ubuntu Server instance
+4. Configure Security Group:
+   - SSH Port 22
+   - HTTP Port 80
 
 
 ---
 
-# ⚙️ Server Configuration
+## Step 2: Connect to Server
 
-## Update Ubuntu Server
+Command:
+
+```bash
+ssh -i key.pem ubuntu@public-ip
+```
+
+
+---
+
+## Step 3: Update Server
 
 ```bash
 sudo apt update
-sudo apt upgrade
 
-Install Required Packages
-sudo apt install apache2
-sudo apt install git
-sudo apt install curl
-sudo apt install vim
-
-Verify Apache Status
-sudo systemctl status apache2
-🚀 Website Deployment
-
-Website files were deployed to:
-
-/var/www/html
-
-Apache was restarted using:
-
-sudo systemctl restart apache2
-
-The website was verified using the EC2 Public IP address.
-
-🤖 Bash Automation Scripts
-1. Server Health Check
-
-File:
-
-server_health_check.sh
-
-Functions:
-
-CPU Usage
-Memory Usage
-Disk Usage
-Logged-in Users
-Running Processes
-Server Uptime
-2. Apache Service Monitor
-
-File:
-
-apache_monitor.sh
-
-Functions:
-
-Checks Apache service status
-Automatically restarts Apache if stopped
-Displays service status
-3. Website Backup Automation
-
-File:
-
-website_backup.sh
-
-Functions:
-
-Compresses website files
-Creates timestamp-based backup
-Stores backups in Backup folder
-📊 Monitoring & Troubleshooting
-
-Linux logs were analyzed using:
-
-cat /var/log/auth.log
-journalctl -p err
-journalctl -p warning
-
-The log report was generated:
-
-log-report.txt
-🔄 GitHub Version Control
-
-Git workflow used:
-
-git init
-
-git add .
-
-git commit -m "Initial project setup"
-
-git branch feature-monitoring
-
-git merge feature-monitoring
-
-git push origin main
-
-📸 Screenshots
-
-Screenshots include:
-
-AWS EC2 Instance
-Security Group Configuration
-SSH Connection
-Apache Status
-Live Website
-GitHub Repository
-Bash Script Execution
-Monitoring Output
-🧩 Challenges Faced
-
-During implementation, the following challenges were resolved:
-
-EC2 SSH key authentication issues
-Apache deployment configuration
-Linux file permissions
-Website file deployment
-Git branch management
-Server troubleshooting
-🎓 Learning Outcomes
-
-Through this project, I gained practical experience in:
-
-✅ AWS Cloud Infrastructure
-✅ Linux Administration
-✅ Apache Web Server Management
-✅ Git & GitHub Workflow
-✅ Bash Automation
-✅ Server Monitoring
-✅ Troubleshooting
-
-🔮 Future Improvements
-
-Future enhancements:
-
-Configure Domain Name
-Add HTTPS using SSL Certificate
-Add CI/CD Pipeline using Jenkins
-Add Docker Containerization
-Add Monitoring using CloudWatch
-👩‍💻 Author
-
-Sakshi Hulgunde
-
-DevOps Learner
-ITVedant - Batch DRA-501
+sudo apt upgrade -y
+```
 
 
 ---
 
-## After updating README:
-
-Run:
+## Step 4: Install Apache Web Server
 
 ```bash
-git add README.md
+sudo apt install apache2 -y
+```
 
-Commit:
 
-git commit -m "Created professional project README"
+Check Apache status:
 
-Push:
+```bash
+sudo systemctl status apache2
+```
 
-git push origin main
+
+---
+
+## Step 5: Deploy Website
+
+Navigate to Apache directory:
+
+```bash
+cd /var/www/html
+```
+
+
+Copy website files:
+
+```
+index.html
+css/
+js/
+images/
+```
+
+
+Restart Apache:
+
+```bash
+sudo systemctl restart apache2
+```
+
+
+Website can be accessed using:
+
+```
+http://EC2-Public-IP
+```
+
+
+---
+
+# Commands Used
+
+## Linux Commands
+
+| Command | Purpose |
+|---|---|
+| ls | List files |
+| cd | Change directory |
+| pwd | Current location |
+| mkdir | Create folder |
+| chmod | Change permissions |
+| nano | Edit files |
+
+
+## AWS Commands
+
+| Command | Purpose |
+|---|---|
+| ssh | Connect EC2 server |
+| systemctl | Manage services |
+
+
+## Git Commands
+
+| Command | Purpose |
+|---|---|
+| git init | Initialize repository |
+| git add . | Add files |
+| git commit | Save changes |
+| git push | Upload to GitHub |
+| git status | Check repository status |
+
+
+---
+
+# Folder Structure
+
+```
+DevOps-Fundamentals-Project/
+
+│── README.md
+
+│── index.html
+
+│── health-check.sh
+
+│── apache-monitor.sh
+
+│── backup.sh
+
+│── log-report.txt
+
+
+├── screenshots/
+
+│   ├── aws-setup.png
+
+│   ├── website.png
+
+│   └── github.png
+
+
+├── documentation/
+
+│   └── Project_Report.pdf
+```
+
+
+---
+
+# Automation Scripts
+
+## 1. Health Check Script
+
+File:
+
+```
+health-check.sh
+```
+
+Purpose:
+
+- CPU monitoring
+- Memory monitoring
+- Disk monitoring
+- User monitoring
+- Process monitoring
+
+
+---
+
+## 2. Apache Monitor Script
+
+File:
+
+```
+apache-monitor.sh
+```
+
+
+Purpose:
+
+- Checks Apache service status
+- Automatically restarts Apache if stopped
+
+
+---
+
+## 3. Backup Script
+
+File:
+
+```
+backup.sh
+```
+
+
+Purpose:
+
+- Creates website backup
+- Stores compressed backup files
+
+
+---
+
+# Challenges Faced
+
+During project implementation, several challenges were faced:
+
+## 1. EC2 Connection Issues
+
+Problem:
+Unable to connect to Ubuntu server.
+
+Solution:
+Checked key permissions and SSH configuration.
+
+
+---
+
+## 2. Website Not Opening
+
+Problem:
+Website was not accessible through public IP.
+
+Solution:
+
+- Checked Security Group
+- Enabled HTTP Port 80
+- Restarted Apache service
+
+
+---
+
+## 3. File Permission Issues
+
+Problem:
+Apache could not access website files.
+
+Solution:
+
+Used:
+
+```bash
+sudo chmod -R 755 /var/www/html
+```
+
+
+---
+
+## 4. GitHub Upload Issues
+
+Problem:
+Files were not visible in repository.
+
+Solution:
+
+Checked:
+
+```bash
+git status
+
+git add .
+
+git commit
+
+git push
+```
+
+
+---
+
+# Learning Outcomes
+
+After completing this project, I learned:
+
+✅ AWS EC2 server deployment
+
+✅ Linux server management
+
+✅ Apache web server configuration
+
+✅ Git and GitHub version control
+
+✅ Bash scripting automation
+
+✅ Server monitoring techniques
+
+✅ Log analysis and troubleshooting
+
+✅ DevOps project workflow
+
+
+---
+
+# Project Screenshots
+
+## AWS Setup
+
+![AWS Setup](screenshots/aws-setup.png)
+
+
+## Website Deployment
+
+![Website](screenshots/website.png)
+
+
+## GitHub Repository
+
+![GitHub](screenshots/github.png)
+
+
+---
+
+# Conclusion
+
+This project provided practical exposure to DevOps fundamentals by deploying a cloud-based website using AWS, Linux, GitHub, and automation scripts.
+
+The project helped understand the complete workflow from code development to cloud deployment and monitoring.
