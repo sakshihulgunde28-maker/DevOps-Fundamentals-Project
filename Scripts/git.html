@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>AWS Setup</h1>
+
+    <h2>EC2 Instance Creation</h2>
+
+    <p>
+        An Ubuntu EC2 instance was created on AWS cloud platform to host the website.
+    </p>
+
+    <h2>Security Groups</h2>
+
+    <p>
+        Security Groups were configured to allow HTTP traffic on Port 80 and SSH traffic on Port 22.
+    </p>
+
+    <h2>Apache Installation</h2>
+
+    <pre>
+    sudo apt update
+    sudo apt install apache2 -y
+    sudo systemctl start apache2
+    sudo systemctl enable apache2
+    </pre>
+
+    <p>
+        Apache web server was installed and configured to host the project website.
+    </p>
+
+    <h1>About Project</h1>
+
+</body>
+
+</html>
