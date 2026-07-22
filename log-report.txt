@@ -1,0 +1,137 @@
+Jul 18 13:48:10 ubuntu kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Jul 18 13:48:10 ubuntu kernel: i8042: Warning: Keylock active
+Jul 18 13:48:11 ubuntu kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Jul 18 13:48:14 ubuntu kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Jul 18 13:48:15 ip-10-0-1-158 (acpid)[715]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Jul 18 13:48:15 ip-10-0-1-158 (irqbalance)[724]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Jul 18 13:48:16 ip-10-0-1-158 kernel: nvme nvme0: using unchecked data buffer
+Jul 18 13:48:17 ip-10-0-1-158 (cron)[1085]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Jul 18 13:48:23 ip-10-0-1-158 chronyd[801]: System clock wrong by 1.070605 seconds
+Jul 18 13:48:24 ip-10-0-1-158 chronyd[801]: System clock was stepped by 1.070605 seconds
+Jul 18 13:48:27 ip-10-0-1-158 irqbalance[724]: Cannot change IRQ 64 affinity: Permission denied
+Jul 18 13:48:27 ip-10-0-1-158 irqbalance[724]: IRQ 64 affinity is now unmanaged
+Jul 18 13:48:27 ip-10-0-1-158 irqbalance[724]: Cannot change IRQ 65 affinity: Permission denied
+Jul 18 13:48:27 ip-10-0-1-158 irqbalance[724]: IRQ 65 affinity is now unmanaged
+Jul 18 13:50:20 ip-10-0-1-158 kernel: kauditd_printk_skb: 183 callbacks suppressed
+Jul 18 14:49:56 ip-10-0-1-158 kernel: ena 0000:27:00.0: Type was not set for devlink port.
+Jul 18 17:40:54 ip-10-0-1-158 sshd-session[20951]: error: mm_reap: child terminated by signal 15
+Jul 18 17:41:02 ip-10-0-1-158 systemd-udevd[18104]: Failed to remove file descriptor "config-serialization" from the store, ignoring: Connection refused
+-- Boot c434953b562047a399403a41e2c080b6 --
+Jul 19 12:22:12 ip-10-0-1-158 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Jul 19 12:22:12 ip-10-0-1-158 kernel: i8042: Warning: Keylock active
+Jul 19 12:22:13 ip-10-0-1-158 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Jul 19 12:22:14 ip-10-0-1-158 (udev-worker)[399]: enp39s0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Jul 19 12:22:15 ip-10-0-1-158 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Jul 19 12:22:16 ip-10-0-1-158 (acpid)[654]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Jul 19 12:22:16 ip-10-0-1-158 (irqbalance)[669]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Jul 19 12:22:16 ip-10-0-1-158 kernel: nvme nvme0: using unchecked data buffer
+Jul 19 12:22:17 ip-10-0-1-158 (cron)[1029]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Jul 19 12:22:21 ip-10-0-1-158 chronyd[770]: System clock wrong by 1.211915 seconds
+Jul 19 12:22:23 ip-10-0-1-158 chronyd[770]: System clock was stepped by 1.211915 seconds
+Jul 19 12:22:27 ip-10-0-1-158 irqbalance[669]: Cannot change IRQ 64 affinity: Permission denied
+Jul 19 12:22:27 ip-10-0-1-158 irqbalance[669]: IRQ 64 affinity is now unmanaged
+Jul 19 12:22:27 ip-10-0-1-158 irqbalance[669]: Cannot change IRQ 65 affinity: Permission denied
+Jul 19 12:22:27 ip-10-0-1-158 irqbalance[669]: IRQ 65 affinity is now unmanaged
+Jul 19 12:24:08 ip-10-0-1-158 kernel: kauditd_printk_skb: 177 callbacks suppressed
+Jul 19 13:23:58 ip-10-0-1-158 kernel: ena 0000:27:00.0: Type was not set for devlink port.
+Jul 19 13:45:26 ip-10-0-1-158 sshd-session[1167]: error: mm_reap: child terminated by signal 15
+Jul 19 13:45:33 ip-10-0-1-158 systemd-udevd[247]: Failed to remove file descriptor "config-serialization" from the store, ignoring: Connection refused
+-- Boot 2fa66c52978544e8a5a1a4053e18fd04 --
+Jul 20 10:26:25 ip-10-0-1-158 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Jul 20 10:26:25 ip-10-0-1-158 kernel: i8042: Warning: Keylock active
+Jul 20 10:26:26 ip-10-0-1-158 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Jul 20 10:26:27 ip-10-0-1-158 (udev-worker)[402]: enp39s0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Jul 20 10:26:28 ip-10-0-1-158 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Jul 20 10:26:29 ip-10-0-1-158 (acpid)[657]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Jul 20 10:26:29 ip-10-0-1-158 (irqbalance)[669]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Jul 20 10:26:29 ip-10-0-1-158 kernel: nvme nvme0: using unchecked data buffer
+Jul 20 10:26:30 ip-10-0-1-158 (cron)[987]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Jul 20 10:26:34 ip-10-0-1-158 chronyd[773]: System clock wrong by 1.341210 seconds
+Jul 20 10:26:36 ip-10-0-1-158 chronyd[773]: System clock was stepped by 1.341210 seconds
+Jul 20 10:26:40 ip-10-0-1-158 irqbalance[669]: Cannot change IRQ 64 affinity: Permission denied
+Jul 20 10:26:40 ip-10-0-1-158 irqbalance[669]: IRQ 64 affinity is now unmanaged
+Jul 20 10:26:40 ip-10-0-1-158 irqbalance[669]: Cannot change IRQ 65 affinity: Permission denied
+Jul 20 10:26:40 ip-10-0-1-158 irqbalance[669]: IRQ 65 affinity is now unmanaged
+Jul 20 10:28:09 ip-10-0-1-158 kernel: kauditd_printk_skb: 177 callbacks suppressed
+Jul 20 11:28:11 ip-10-0-1-158 kernel: ena 0000:27:00.0: Type was not set for devlink port.
+Jul 20 16:27:17 ip-10-0-1-158 sshd-session[7738]: error: mm_reap: child terminated by signal 15
+Jul 20 16:27:17 ip-10-0-1-158 sshd-session[7852]: error: mm_reap: child terminated by signal 15
+Jul 20 16:27:17 ip-10-0-1-158 (sd-pam)[7761]: pam_systemd(systemd-user:session): Varlink call io.systemd.Login.ReleaseSession failed: io.systemd.Login.NoSuchSession
+Jul 20 16:27:24 ip-10-0-1-158 systemd-udevd[243]: Failed to remove file descriptor "config-serialization" from the store, ignoring: Connection refused
+-- Boot 89bcadfa33c14267a14e451e77e4ce01 --
+Jul 21 01:30:25 ip-10-0-1-158 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Jul 21 01:30:25 ip-10-0-1-158 kernel: i8042: Warning: Keylock active
+Jul 21 01:30:26 ip-10-0-1-158 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Jul 21 01:30:27 ip-10-0-1-158 (udev-worker)[406]: enp39s0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Jul 21 01:30:28 ip-10-0-1-158 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Jul 21 01:30:29 ip-10-0-1-158 (acpid)[661]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Jul 21 01:30:29 ip-10-0-1-158 (irqbalance)[674]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Jul 21 01:30:29 ip-10-0-1-158 kernel: nvme nvme0: using unchecked data buffer
+Jul 21 01:30:31 ip-10-0-1-158 (cron)[990]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Jul 21 01:30:35 ip-10-0-1-158 chronyd[740]: System clock wrong by 1.400401 seconds
+Jul 21 01:30:37 ip-10-0-1-158 chronyd[740]: System clock was stepped by 1.400401 seconds
+Jul 21 01:30:40 ip-10-0-1-158 irqbalance[674]: Cannot change IRQ 64 affinity: Permission denied
+Jul 21 01:30:40 ip-10-0-1-158 irqbalance[674]: IRQ 64 affinity is now unmanaged
+Jul 21 01:30:40 ip-10-0-1-158 irqbalance[674]: Cannot change IRQ 65 affinity: Permission denied
+Jul 21 01:30:40 ip-10-0-1-158 irqbalance[674]: IRQ 65 affinity is now unmanaged
+Jul 21 01:33:36 ip-10-0-1-158 kernel: kauditd_printk_skb: 177 callbacks suppressed
+Jul 21 01:39:04 ip-10-0-1-158 sshd-session[2199]: error: mm_reap: child terminated by signal 15
+Jul 21 01:39:04 ip-10-0-1-158 sshd-session[1657]: error: mm_reap: child terminated by signal 15
+Jul 21 01:39:11 ip-10-0-1-158 systemd-networkd[619]: Could not set hostname: Transaction for systemd-hostnamed.service/start is destructive (systemd-binfmt.service has 'stop' job queued, but 'start' is included in transaction).
+Jul 21 01:39:11 ip-10-0-1-158 systemd-udevd[246]: Failed to remove file descriptor "config-serialization" from the store, ignoring: Connection refused
+-- Boot dcdcc434f7e04b99b63d78b9359ab1f0 --
+Jul 21 15:56:01 ip-10-0-1-158 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Jul 21 15:56:01 ip-10-0-1-158 kernel: i8042: Warning: Keylock active
+Jul 21 15:56:02 ip-10-0-1-158 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Jul 21 15:56:03 ip-10-0-1-158 (udev-worker)[403]: enp39s0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Jul 21 15:56:04 ip-10-0-1-158 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Jul 21 15:56:06 ip-10-0-1-158 (acpid)[658]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Jul 21 15:56:06 ip-10-0-1-158 (irqbalance)[668]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Jul 21 15:56:06 ip-10-0-1-158 kernel: nvme nvme0: using unchecked data buffer
+Jul 21 15:56:07 ip-10-0-1-158 (cron)[983]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Jul 21 15:56:12 ip-10-0-1-158 chronyd[762]: System clock wrong by 1.929149 seconds
+Jul 21 15:56:14 ip-10-0-1-158 chronyd[762]: System clock was stepped by 1.929149 seconds
+Jul 21 15:56:18 ip-10-0-1-158 irqbalance[668]: Cannot change IRQ 64 affinity: Permission denied
+Jul 21 15:56:18 ip-10-0-1-158 irqbalance[668]: IRQ 64 affinity is now unmanaged
+Jul 21 15:56:18 ip-10-0-1-158 irqbalance[668]: Cannot change IRQ 65 affinity: Permission denied
+Jul 21 15:56:18 ip-10-0-1-158 irqbalance[668]: IRQ 65 affinity is now unmanaged
+Jul 21 15:58:32 ip-10-0-1-158 kernel: kauditd_printk_skb: 177 callbacks suppressed
+Jul 21 16:47:42 ip-10-0-1-158 systemd-networkd[616]: Could not set hostname: Transaction for systemd-hostnamed.service/start is destructive (lvm2-monitor.service has 'stop' job queued, but 'start' is included in transaction).
+Jul 21 16:47:42 ip-10-0-1-158 systemd-udevd[245]: Failed to remove file descriptor "config-serialization" from the store, ignoring: Connection refused
+-- Boot bb3f3a3ebef3446bbae2cff4e45bb6a7 --
+Jul 22 09:54:42 ip-10-0-1-158 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Jul 22 09:54:42 ip-10-0-1-158 kernel: i8042: Warning: Keylock active
+Jul 22 09:54:43 ip-10-0-1-158 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Jul 22 09:54:44 ip-10-0-1-158 (udev-worker)[401]: enp39s0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Jul 22 09:54:45 ip-10-0-1-158 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Jul 22 09:54:47 ip-10-0-1-158 (acpid)[659]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Jul 22 09:54:47 ip-10-0-1-158 (irqbalance)[672]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Jul 22 09:54:47 ip-10-0-1-158 kernel: nvme nvme0: using unchecked data buffer
+Jul 22 09:54:48 ip-10-0-1-158 (cron)[987]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Jul 22 09:54:53 ip-10-0-1-158 chronyd[770]: System clock wrong by 1.533940 seconds
+Jul 22 09:54:55 ip-10-0-1-158 chronyd[770]: System clock was stepped by 1.533940 seconds
+Jul 22 09:54:59 ip-10-0-1-158 irqbalance[672]: Cannot change IRQ 64 affinity: Permission denied
+Jul 22 09:54:59 ip-10-0-1-158 irqbalance[672]: IRQ 64 affinity is now unmanaged
+Jul 22 09:54:59 ip-10-0-1-158 irqbalance[672]: Cannot change IRQ 65 affinity: Permission denied
+Jul 22 09:54:59 ip-10-0-1-158 irqbalance[672]: IRQ 65 affinity is now unmanaged
+Jul 22 09:57:34 ip-10-0-1-158 kernel: kauditd_printk_skb: 177 callbacks suppressed
+Jul 22 10:56:28 ip-10-0-1-158 kernel: ena 0000:27:00.0: Type was not set for devlink port.
+Jul 22 14:48:54 ip-10-0-1-158 sshd-session[3275]: error: mm_reap: child terminated by signal 15
+-- Boot 1fac85edfdf7422a955c6b2a65818a7a --
+Jul 22 16:00:23 ip-10-0-1-158 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Jul 22 16:00:23 ip-10-0-1-158 kernel: i8042: Warning: Keylock active
+Jul 22 16:00:24 ip-10-0-1-158 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Jul 22 16:00:25 ip-10-0-1-158 (udev-worker)[407]: enp39s0: Could not set WakeOnLan to off, ignoring: Operation not supported
+Jul 22 16:00:26 ip-10-0-1-158 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Jul 22 16:00:28 ip-10-0-1-158 (acpid)[662]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Jul 22 16:00:28 ip-10-0-1-158 (irqbalance)[672]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Jul 22 16:00:28 ip-10-0-1-158 kernel: nvme nvme0: using unchecked data buffer
+Jul 22 16:00:29 ip-10-0-1-158 (cron)[984]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Jul 22 16:00:34 ip-10-0-1-158 chronyd[749]: System clock wrong by 1.763360 seconds
+Jul 22 16:00:35 ip-10-0-1-158 chronyd[749]: System clock was stepped by 1.763360 seconds
+Jul 22 16:00:40 ip-10-0-1-158 irqbalance[672]: Cannot change IRQ 64 affinity: Permission denied
+Jul 22 16:00:40 ip-10-0-1-158 irqbalance[672]: IRQ 64 affinity is now unmanaged
+Jul 22 16:00:40 ip-10-0-1-158 irqbalance[672]: Cannot change IRQ 65 affinity: Permission denied
+Jul 22 16:00:40 ip-10-0-1-158 irqbalance[672]: IRQ 65 affinity is now unmanaged
+Jul 22 16:02:33 ip-10-0-1-158 kernel: kauditd_printk_skb: 177 callbacks suppressed
+Jul 22 17:02:10 ip-10-0-1-158 kernel: ena 0000:27:00.0: Type was not set for devlink port.
